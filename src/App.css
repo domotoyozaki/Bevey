@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+html,
+body {
+  height: 100vh;
+  background-color: #0a113e;
+}
+
+.comfortaa {
+  font-family: 'Comfortaa', cursive;
 }
