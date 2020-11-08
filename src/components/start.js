@@ -1,15 +1,24 @@
-import './start.css';
-import { Grid, Typography, Button } from '@material-ui/core';
+import 'App.css';
+import { Grid, Typography, Button, makeStyles} from '@material-ui/core';
 import React from 'react';
 import logo from 'images/mainLogo.png';
+import { Link } from 'react-router-dom';
+
+const useStyles = makeStyles({
+  greeting: {
+    fontFamily: 'Comfortaa',
+    color: 'white'
+  },
+});
 
 const Start = () => {
+  const classes = useStyles();
   return (
     <Grid container alignItems='center' justify='center' direction='column' style={{height: '100vh'}}>
       <Grid container direction='column' alignItems='center' spacing={9}>
 
         <Grid item>
-          <Typography className='comfortaa white-text' variant='h2' align='center'>Welcome to Bevey!</Typography>
+          <Typography variant='h2' className={classes.greeting}>Welcome to Bevey!</Typography>
         </Grid>
 
         <Grid item justify='center' alignItems='center'>
@@ -17,7 +26,7 @@ const Start = () => {
         </Grid>
 
         <Grid item>
-          <Button className='comfortaa white-text' size='large'>Get Started</Button>
+          <Button className={classes.greeting} variant="contained" color='primary' component={Link} to='/home'>Get Started</Button>
         </Grid>
       </Grid>
     </Grid>
