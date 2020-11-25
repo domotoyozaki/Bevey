@@ -30,10 +30,10 @@ const Profile = () => {
     <Grid container alignItems='center' direction='column' style={{height: '100vh', marginTop: '40px'}}>
       <Grid container direction='column' alignItems='center' spacing={3}>
         <Grid item>
-          {/* <Typography className={classes.header} variant='h2' align='center'>{name}</Typography>
+          <Typography className={classes.header} variant='h2' align='center'>{name}</Typography>
           <Grid item>
             <Typography onClick={() => setName('domo_toyozaki')} className={classes.header, classes.edit} variant='h6' align='center'>Edit Username</Typography>
-          </Grid> */}
+          </Grid>
         </Grid>
 
         <Grid item justify='center' alignItems='center'>
